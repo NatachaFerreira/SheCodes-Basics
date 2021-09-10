@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hoya 🌿</title>
+    <style>
+        .container{
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px;
+        }
+      h1 {
+        text-align: center;
+        font-family: "Julius Sans One", sans-serif;
+        font-size: 50px;
+      }
+       span {
+        color: #68ad22;
+      }
+      h2 {
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        font-weight: lighter;
+      }
+      img.plants {
+        max-width: 100%;
+      }
+
+      p {
+        text-align: justify;
+        font-size: 18px;
+        font-family: "Raleway", sans-serif;
+        line-height: 33px;
+        padding: 8px 25px;
+        margin: 40px auto;
+      }
+      .learn-more{
+          display: block;
+          margin-top: 5px;
+          text-decoration: none;
+          color: #79ae22;
+          
+
+      }
+      .learn-more:hover{
+          text-decoration: underline;
+      }
+     
+      img.flowers {
+          max-width: 60%;
+        border-radius: 3px;
+        display: block;
+        margin: 60px auto;
+      }
+      button{
+          display: block;
+          margin: 90px auto;
+          background: white;
+          border: 5px;
+          border-radius: 8px;
+          box-shadow: 0px 3px 8px #939394;
+          color:#79ae22;
+          font-size: 25px;
+          font-family: "Julius Sans One", sans-serif;
+          text-align: center;
+          padding: 15px 20px;   
+          transition: all 200ms ease-in-out ; 
+      }
+      button:hover{
+          opacity: 0.7;
+          cursor: pointer;
+      }
+      .footer{
+          text-align: center;
+          font-size: 14px;
+          color: #898989 ;  
+      }
+      body {
+        background-image: linear-gradient(to top, #bee876 0%, #ffffff 35%);
+      }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+    <h1>🌱 Hoya 🌱</h1>
+    <h2>Are my favorite kind of <span><em>plants</em></h2></span>
+    <hr />
+    <img
+      class="plants"
+      src="https://mulhalls.com/wp-content/uploads/2020/01/011320-hero.jpg"
+      alt="Some Hoya plants"
+    />
+    <hr />
+    <div>
+      <p>
+        Many species of Hoya are popular houseplants, grown for their
+          attractive foliage and strongly scented flowers.
+        Numerous cultivars have been selected for different leaf forms or flower
+        colours. Hoyas grow well indoors, preferring bright light, but will
+        tolerate fairly low light levels, although they may not flower without
+        bright light. Hoya leaves vary in size, texture, colour and venation. In
+        size, leaves range from as small as 5 mm in length to as large as 25 cm
+        by 35 cm. Some Hoya leaves appear to be veinless while others have very
+        conspicuous veins of a lighter or darker colour. Some leaves are mottled
+        with speckles of silvery white; others have leaves that are thin and
+        translucent; some are so thick and succulent that they look more like
+        crassulas than hoyas. Hoya flowers are all shaped like five pointed
+        stars. Some species' petals reflex so far that the flowers appear to be
+        round or ball-like.
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Hoya_(plant)" 
+        target="_blank"
+        class="learn-more"
+        >
+         Learn more on wikipedia
+        </a>
+      </p>
+    </div>
+    <img
+      class="flowers"
+      src="https://i.pinimg.com/564x/0d/d3/f4/0dd3f4cebe8fcbd8e3c6ff12a33b42c3.jpg"
+      alt="Some Hoya flowers"
+    />
+     <button class="buy-a-Hoya"><strong>Buy a Hoya</strong></button>
+
+     <p class="footer"> <strong>This page was built by Natacha Ferreira</strong> </p>
+    </div>
+    <script>
+      function buyButton (){
+        let name= prompt ("What is your name?");
+        let likesHoyas= prompt ("Do you like Hoyas? (You must answer yes or no)");
+        if (likesHoyas.toLowerCase() === "yes"){
+          alert("Hi! "+ name +". Good choice! 😄");
+          let askEmail = prompt ("What is your e-mail address?");
+          alert("Thank you! "+ "We will be in touch with you soon");
+        } else if (likesHoyas.toLowerCase() === "no"){
+          alert("Hi! "+ name +". Too bad then... 😕");
+        } else { alert("Remeber, you can only answer yes or no");    
+          }
+        }
+          
+      
+let buyHoya = document.querySelector(".buy-a-Hoya");
+buyHoya.addEventListener("click", buyButton);
+    </script>
+  </body>
+</html>
