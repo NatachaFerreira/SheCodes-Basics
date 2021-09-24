@@ -1,8 +1,8 @@
-# [SheCodes Basics](https://www.shecodes.io/workshops) - Final Project 
+# [SheCodes Basics](https://www.shecodes.io/workshop#tour) - Final Project 
 
 The objective was to create a landing page from scratch with user interaction. The theme was: "Something that I'm passionate about"
 
-[Click to check Project](https://mystifying-payne-20a04f.netlify.app/)
+[Click to check my Project](https://mystifying-payne-20a04f.netlify.app/)
 
 
 ## HTML requirements 
